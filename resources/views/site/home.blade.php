@@ -10,11 +10,30 @@
     <link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro facere ipsa quam quod ducimus necessitatibus libero architecto debitis earum tempore non, accusamus vitae repellat? Officia molestiae enim quia sequi ullam.
-    </p>
-    <button class="btn btn-danger"><i class="fa-solid fa-house-user"></i></button>
-    
+
+    {{-- top header starts here --}}
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-sm-12 col-12 text-center text-lg-left">
+                    <div class="header-contact">
+                        <i class="fas fa-location-arrow"></i> pokhara -8, srijana chowk &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-phone"></i> 098-7654321
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-hiden">
+                    <div class="header-icon">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- top header ends here --}}
+
     <script src="{{ asset('site/js/jquery.js') }}"></script>
     <script src="{{ asset('site/bootstrap/js/bootstrap.js') }}"></script>
     <script src="{{ asset('site/fontawesome/js/all.js') }}"></script>

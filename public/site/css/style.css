@@ -1,3 +1,38 @@
-body{
-    /* background-color: red; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
+:root{
+    --skin-color: #8e2306;
+}
+body{
+    background-color: #f5f8fd;
+}
+
+/* topheader section css starts here */
+#top-header{
+    background-color: var(--skin-color);
+    height: 40px;
+    line-height: 40px;
+}
+#top-header .header-contact{
+    color: white;
+}
+#top-header .header-icon{
+    word-spacing: 20px;
+    text-align: right;
+}
+#top-header .header-icon a{
+    color: white;
+    padding: 2px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50p
+}
+#top-header .header-icon a:hover{
+    color: #001c40;
+}
+/* topheader section css ends here */
