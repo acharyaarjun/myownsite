@@ -7,6 +7,7 @@
 }
 :root{
     --skin-color: #8e2306;
+    --s-color: #001c40;
 }
 body{
     background-color: #f5f8fd;
@@ -33,6 +34,65 @@ body{
     height: 50p
 }
 #top-header .header-icon a:hover{
-    color: #001c40;
+    color: var(--s-color);
 }
 /* topheader section css ends here */
+
+/* navbar section starts here */
+#navbar{
+    background-color: white;
+    height: 75px;
+}
+#navbar .navbar{
+    line-height: 75px;
+    padding: 0;
+    height: 75px;
+}
+#navbar .navbar .navbar-toggler{
+    background-color: var(--skin-color);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+#navbar .navbar .navbar-brand{
+    color: var(--skin-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 0;
+}
+#navbar .navbar .nav-item .nav-link{
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+}
+#navbar .navbar .dropdown .dropdown-menu .dropdown-item{
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    color: black;
+    font-weight: bold;
+    
+}
+#navbar .navbar .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: var(--s-color);
+    color: white;
+}
+#navbar .navbar .dropdown .dropdown-menu{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-width: 250px;
+    border: 2px solid var(--s-color);
+}
+#navbar .navbar .nav-item .nav-link:hover{
+    color: white;
+    background-color: var(--skin-color);
+    border-bottom: 3px solid #731d05;
+}
+#navbar .navbar .nav-item.active .nav-link{
+    color: white;
+    background-color: var(--skin-color);
+    border-bottom: 3px solid #731d05;
+}
+/* navbar section ends here */
