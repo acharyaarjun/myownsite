@@ -48,6 +48,10 @@ body{
     padding: 0;
     height: 75px;
 }
+#navbar .navbar .collapse.show{
+    z-index: 100;
+    background-color: white;
+}
 #navbar .navbar .navbar-toggler{
     background-color: var(--skin-color);
     color: white;
@@ -96,3 +100,15 @@ body{
     border-bottom: 3px solid #731d05;
 }
 /* navbar section ends here */
+
+/* slider section starts here */
+#slider{
+    height: 500px;
+}
+#slider .container-fluid{
+    padding: 0;
+}
+#slider .container-fluid img{
+    height: 88.2vh;
+}
+/* slider section ends here */
