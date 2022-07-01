@@ -12,6 +12,46 @@
 body{
     background-color: #f5f8fd;
 }
+/* section title */
+.section-title{
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.section-title h6{
+    color: var(--skin-color);
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: capitalize;
+    line-height: 15px;
+}
+.section-title h2{
+    color: var(--s-color);
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+/* section title */
+
+/* button */
+.btn{
+    /* background-color: var(--s-color); */
+    border: 2px solid var(--skin-color);
+    color: var(--skin-color);
+    border-radius: 20px;
+    padding: 5px 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: var(--skin-color);
+    border: 2px solid var(--skin-color);
+    border-radius: 0;
+    color: white;
+}
+/* button */
 
 /* topheader section css starts here */
 #top-header{
@@ -103,7 +143,7 @@ body{
 
 /* slider section starts here */
 #slider{
-    height: 500px;
+    height: 88.2vh;
 }
 #slider .container-fluid{
     padding: 0;
@@ -112,3 +152,22 @@ body{
     height: 88.2vh;
 }
 /* slider section ends here */
+
+/* about us section starts here */
+#about{
+    /* background-color: gray; */
+    min-height: 100vh;
+    padding: 60px;
+}
+#about .about-img img{
+    border-radius: 5px;
+}
+#about .about-content{
+    text-align: center;
+}
+#about .about-content p{
+    /* font-weight: 500; */
+    font-size: 18px;
+    /* text-align: justify; */
+}
+/* about us section ends here */

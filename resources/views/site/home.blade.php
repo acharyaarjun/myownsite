@@ -119,6 +119,36 @@
     </section>
     {{-- slider section ends here --}}
 
+    {{-- about us section starts here --}}
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title">
+              <h6>About Us</h6>
+              <h2>who we are</h2>
+            </div>             
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-img">
+              <img src="{{ asset('site/image/bg.jpg') }}" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, excepturi dolorum odio minima molestiae saepe similique ducimus hic unde. Esse quam minus minima adipisci odit magnam quia laudantium voluptates expedita necessitatibus dolore harum, aliquam culpa ipsa eaque, numquam provident at quisquam earum amet inventore aliquid nulla, eveniet atque. Quidem dignissimos veritatis eveniet ipsam eos, ex animi in modi officiis ea provident delectus illo, laborum earum! Ducimus praesentium totam error laborum omnis architecto lrome lorem lrome
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{-- about us section ends here --}}
+
     <script src="{{ asset('site/js/jquery.js') }}"></script>
     <script src="{{ asset('site/bootstrap/js/bootstrap.js') }}"></script>
     <script src="{{ asset('site/fontawesome/js/all.js') }}"></script>
