@@ -83,6 +83,12 @@ body{
     background-color: white;
     height: 75px;
 }
+#navbar.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
 #navbar .navbar{
     line-height: 75px;
     padding: 0;
@@ -171,3 +177,46 @@ body{
     /* text-align: justify; */
 }
 /* about us section ends here */
+
+/* service section starts here */
+#service{
+    /* background-color: gray; */
+    min-height: 100vh;
+    padding: 60px;
+}
+#service .service-box{
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    background-clip: border-box;
+    /* box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; */
+    margin-bottom: 20px;
+}
+#service .service-box:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+#service .service-box .icon{
+    color: var(--s-color);
+    font-size: 20px;
+    border: 5px solid var(--s-color);
+    padding: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#service .service-box .icon:hover{
+    background-color: var(--s-color);
+    color: white;
+}
+#service .service-box h4{
+    color: var(--skin-color);
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#service .service-box p{
+    font-size: 18px;
+}
+/* service section ends here */

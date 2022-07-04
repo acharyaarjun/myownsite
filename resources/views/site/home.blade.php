@@ -35,7 +35,7 @@
     {{-- top header ends here --}}
 
     {{-- navbar section starts here --}}
-    <section id="navbar">
+    <section id="navbar" class="sticky">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">myOwnSite</a>
@@ -148,6 +148,77 @@
       </div>
     </section>
     {{-- about us section ends here --}}
+
+    {{-- service section starts here --}}
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title">
+              <h6>Service</h6>
+              <h2>what we do</h2>
+            </div>             
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <i class="fas fa-laptop-code icon"></i>
+              <h4>Web Development</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima in eligendi quas nesciunt pariatur rerum.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <i class="fas fa-mobile icon"></i>
+              <h4>Responsive Design</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima in eligendi quas nesciunt pariatur rerum.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <i class="fas fa-code icon"></i>
+              <h4>Clean Code</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima in eligendi quas nesciunt pariatur rerum.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <i class="fas fa-image icon"></i>
+              <h4>Graphics Design</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima in eligendi quas nesciunt pariatur rerum.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <i class="fas fa-search icon"></i>
+              <h4>seo marketing</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima in eligendi quas nesciunt pariatur rerum.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <i class="fas fa-cloud icon"></i>
+              <h4>Cloud service</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima in eligendi quas nesciunt pariatur rerum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{-- service section ends here --}}
 
     <script src="{{ asset('site/js/jquery.js') }}"></script>
     <script src="{{ asset('site/bootstrap/js/bootstrap.js') }}"></script>
