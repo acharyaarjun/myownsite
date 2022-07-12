@@ -39,11 +39,12 @@ body{
     border: 2px solid var(--skin-color);
     color: var(--skin-color);
     border-radius: 20px;
-    padding: 5px 20px;
+    padding: 3px 20px;
     line-height: 30px;
     letter-spacing: 3px;
     font-weight: bold;
     transition: .5s;
+    text-transform: capitalize;
 }
 .btn:hover{
     background-color: var(--skin-color);
@@ -220,3 +221,59 @@ body{
     font-size: 18px;
 }
 /* service section ends here */
+
+/* our class section starts here */
+#our-class{
+    min-height: 100vh;
+    padding: 60px;
+}
+#our-class .class-box{
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.669);
+    background-clip: border-box;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+#our-class .class-box:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    border: 2px dashed var(--s-color);
+    /* padding: 5px; */
+}
+#our-class .class-box h4{
+    font-size: 28px;
+    font-weight: bolder;
+    color: var(--s-color);
+    quotes: "'" "'";
+}
+#our-class .class-box h6{
+   font-weight: bold;
+   text-transform: capitalize;
+}
+#our-class .class-box p{
+   font-size: 48px;
+   font-weight: 100;
+   color: var(--skin-color);
+}
+#our-class .class-box ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#our-class .class-box ul li{
+    line-height: 50px;
+    font-weight: bold;
+    /* letter-spacing: 2px; */
+    font-size: 18px;
+    border-bottom: 2px solid var(--s-color);
+}
+#our-class .class-box ul li:last-child{
+    border-bottom: none;
+}
+#our-class .class-box ul li::before{
+    content:"\2714\0020";
+    color: var(--s-color);
+}
+/* our class section ends here */
