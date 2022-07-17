@@ -277,3 +277,56 @@ body{
     color: var(--s-color);
 }
 /* our class section ends here */
+
+/* contact section starts here */
+#contact{
+    padding: 60px;
+    min-height: 100vh;
+}
+#contact .contact-box{
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    background-clip: border-box;
+    margin-bottom: 20px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+#contact .contact-box:hover .icon{
+    background-color: var(--s-color);
+    color: white;
+}
+#contact .contact-box .icon{
+    color: var(--s-color);
+    font-size: 20px;
+    border: 5px solid var(--s-color);
+    padding: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#contact .contact-box .icon:hover{
+    background-color: var(--s-color);
+    color: white;
+}
+#contact .contact-box h4{
+    color: var(--skin-color);
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#contact .contact-box p{
+    font-size: 18px;
+}
+#contact form .form-control{
+    border-radius: 20px;
+    padding-left: 20px;
+    border: 2px solid var(--s-color);
+    color: var(--s-color);
+}
+#contact form .form-control:focus{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    border: 2px solid var(--skin-color);
+}
+/* contact section ends here */
