@@ -84,7 +84,7 @@ body{
     background-color: white;
     height: 75px;
 }
-#navbar.sticky-top {
+#navbar.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -318,6 +318,7 @@ body{
 }
 #contact .contact-box p{
     font-size: 18px;
+    font-weight: bold;
 }
 #contact form .form-control{
     border-radius: 20px;
@@ -329,4 +330,69 @@ body{
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
     border: 2px solid var(--skin-color);
 }
+#footer{
+    background-color: rgb(10, 94, 158);
+    color: white;
+    padding: 40px 0;
+}
+#footer .footer-about{
+    text-align: left;
+}
+#footer .footer-about a{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--s-color);
+}
+#footer .footer-about p{
+    font-size: 14px;
+    text-align: left;
+}
+#footer .quick-links h4{
+    border-bottom: 2px solid white;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: var(--s-color);
+}
+#footer .quick-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer .quick-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+#footer .quick-links ul li a:hover{
+    color: var(--s-color);
+}
+#footer .footer-contact h4{
+    border-bottom: 2px solid white;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: var(--s-color);
+}
+#footer .footer-icon{
+    margin-top: 40px;
+    border-top: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    word-spacing: 5px;
+}
+#footer .footer-icon .icon{
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
 /* contact section ends here */
