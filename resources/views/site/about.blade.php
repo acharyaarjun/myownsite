@@ -1,4 +1,4 @@
-@extends('site.template')
+@extends('site.template', ['activePage' => 'about'])
 @section('content')
 {{-- about us section starts here --}}
 <section id="about">

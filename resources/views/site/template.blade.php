@@ -50,13 +50,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item {{ $activePage == 'home' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('getHome') }}">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $activePage == 'about' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('getAbout') }}">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $activePage == 'service' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('getService') }}">Service</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -72,7 +72,7 @@
                                 <a class="dropdown-item" href="#">Seo Marketing</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $activePage == 'contact' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('getContact') }}">Contact</a>
                         </li>
                     </ul>

@@ -1,4 +1,4 @@
-@extends('site.template')
+@extends('site.template', ['activePage' => 'contact'])
 @section('content')
     {{-- contact section starts here --}}
     <section id="contact">

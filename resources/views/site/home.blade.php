@@ -1,4 +1,4 @@
-@extends('site.template')
+@extends('site.template', ['activePage' => 'home'])
 @section('content')
     {{-- slider section starts here --}}
     <section id="slider">
