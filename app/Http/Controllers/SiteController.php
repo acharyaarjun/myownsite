@@ -18,4 +18,7 @@ class SiteController extends Controller
     public function getContact(){
         return view('site.contact');
     }
+    public function postSendMessage(Request $request){
+        dd($request->all());
+    }
 }

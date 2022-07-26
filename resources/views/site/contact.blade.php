@@ -42,27 +42,27 @@
             </div>
             <div class="row mt-5">
                 <div class="col-md-12">
-                    <form action="">
+                    <form action="{{ route('postSendMessage') }}" method="POST">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="fullname"></label>
-                                    <input type="text" id="fullname" class="form-control" placeholder="Name" required>
+                                    <input type="text" id="fullname" class="form-control" placeholder="Name" name="fullname" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email"></label>
-                                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                                    <input type="email" id="email" class="form-control" placeholder="Email" name="email" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="subject"></label>
-                                    <input type="text" id="subject" class="form-control" placeholder="Subject"
-                                        required>
+                                    <input type="text" id="subject" class="form-control" placeholder="Subject" name="subject" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="message"></label>
-                                    <textarea id="message" class="form-control" rows="7" required style="height: 196px" placeholder="Message"></textarea>
+                                    <textarea id="message" class="form-control" rows="7" required name="usermessage" style="height: 196px" placeholder="Message"></textarea>
                                 </div>
                             </div>
                         </div>
