@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class SiteController extends Controller
 {
@@ -19,6 +20,22 @@ class SiteController extends Controller
         return view('site.contact');
     }
     public function postSendMessage(Request $request){
-        dd($request->all());
+        $fullname = $request->input('fullname');
+        $email = $request->input('email');
+        $subject = $request->input('subject');
+        $usermessage = $request->input('usermessage');
+        $data = array(
+            'fullname' => $fullname,
+            'email' => $email,
+            'subject' => $subject,
+            'usermessage' => $usermessage,
+        );
+        // dd($data);
+        Mail::send('email.sendmessage', $data, function($message) use($data){
+            $message->to('legendssssarjun333@gmail.com');
+            $message->subject($data['subject']);
+            $message->from($data['email']);
+        });
     }
+
 }
