@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,7 @@ Route::get('/service', [SiteController::class, 'getService'])->name('getService'
 Route::get('/contact', [SiteController::class, 'getContact'])->name('getContact');
 
 Route::post('/contact/sendmessage', [SiteController::class, 'postSendMessage'])->name('postSendMessage');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
