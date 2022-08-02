@@ -36,6 +36,9 @@ class SiteController extends Controller
             $message->subject($data['subject']);
             $message->from($data['email']);
         });
+        // return redirect()->back(); // jun page bata aayeko ho tehi page ma pathuna ko lagi yo garney
+        return redirect()->route('getHome')->with('status', 'Contact form submitted successfully! We will contact you soon.');
+
     }
 
 }

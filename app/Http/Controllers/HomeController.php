@@ -25,4 +25,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function getAboutManage(){
+        return view('admin.about.manage');
+    }
 }

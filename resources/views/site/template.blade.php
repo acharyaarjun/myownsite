@@ -148,12 +148,34 @@
     {{-- footer section ends here --}}
 
 
+    <!-- Modal -->
+    @if (Session::has('status'))
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content bg-sucess">
+
+                    <div class="modal-body">
+                        <div class="container-fluid text-center text-light">
+                            {{ Session::get('status') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+
+
 
     <script src="{{ asset('site/js/jquery.js') }}"></script>
     <script src="{{ asset('site/bootstrap/js/bootstrap.js') }}"></script>
     <script src="{{ asset('site/fontawesome/js/all.js') }}"></script>
     <script src="{{ asset('site/js/script.js') }}"></script>
+    <script>
+        $('#modelId').modal('show');
+    </script>
     @yield('js')
+
 </body>
 
 </html>
