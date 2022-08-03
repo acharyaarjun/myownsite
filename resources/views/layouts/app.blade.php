@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
+        
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+
+    <link rel="stylesheet" href="{{ asset('site/fontawesome/css/all.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
@@ -29,7 +31,7 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navba>rSupportedContent"
                     aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -50,7 +52,7 @@
                                 </li>
                             @endif
 
-                            {{-- @if (Route::has('register'))
+                            {{-- @if (Route::has('registe>>r'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
@@ -60,13 +62,13 @@
                                 <a class="nav-link" href="{{ route('getAboutManage') }}">{{ __('About') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">{{ __('Service') }}</a>
+                                <a class="nav-link" href="{{ route('getServiceManage') }}">{{ __('Service') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">{{ __('Class') }}</a>
+                                <a class="nav-link" href="{{ route('getClassManage') }}">{{ __('Class') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">{{ __('Contact') }}</a>
+                                <a class="nav-link" href="{{ route('getContactManage') }}">{{ __('Contact') }}</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
@@ -96,6 +98,9 @@
             @yield('content')
         </main>
     </div>
+
+
+    <script src="{{ asset('site/fontawesome/js/all.js') }}"></script>
 </body>
 
 </html>

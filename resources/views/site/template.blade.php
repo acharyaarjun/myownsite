@@ -153,7 +153,7 @@
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
             aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content bg-sucess">
+                <div class="modal-content bg-success">
 
                     <div class="modal-body">
                         <div class="container-fluid text-center text-light">

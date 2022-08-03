@@ -25,7 +25,23 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    // about manage garni function haru
     public function getAboutManage(){
         return view('admin.about.manage');
+    }
+
+    // service manage garni function haru
+    public function getServiceManage(){
+        return view('admin.service.manage');
+    }
+
+    // class manage garni function haru
+    public function getClassManage(){
+        return view('admin.class.manage');
+    }
+
+    // contact manage garni function haru
+    public function getContactManage(){
+        return view('admin.contact.manage');
     }
 }
