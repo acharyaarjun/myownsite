@@ -99,8 +99,8 @@
         </main>
     </div>
 
-
     <script src="{{ asset('site/fontawesome/js/all.js') }}"></script>
+    {{-- <script src="{{ asset('site/js/jquery.js') }}"></script> --}}
 </body>
 
 </html>
