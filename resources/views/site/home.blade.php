@@ -100,8 +100,7 @@
                         <i class="fas fa-laptop-code icon"></i>
                         <h4>Web Development</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima
-                            in eligendi quas nesciunt pariatur rerum.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est saepe aperiam odit, minima in eligendi quas nesciunt pariatur rerum.
                         </p>
                     </div>
                 </div>

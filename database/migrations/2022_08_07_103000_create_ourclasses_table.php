@@ -18,7 +18,7 @@ class CreateOurclassesTable extends Migration
             $table->string('class_title');
             $table->string('class_duration');
             $table->decimal('class_cost');
-            $table->string('class_teacher');
+            $table->string('class_teacher')->nullable();
             $table->longText('class_description')->nullable();
             $table->string('class_image')->nullable();
             $table->timestamps();

@@ -21,6 +21,11 @@
 
     <link rel="stylesheet" href="{{ asset('site/fontawesome/css/all.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        label{
+            font-weight: bold; 
+        }
+    </style>
 </head>
 
 <body>

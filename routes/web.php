@@ -31,12 +31,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // About manage garna ko lagi route haru
 Route::get('/admin/about/manage', [HomeController::class, 'getAboutManage'])->name('getAboutManage')->middleware('auth');
+Route::post('/admin/about/add', [HomeController::class, 'postAddAbout'])->name('postAddAbout')->middleware('auth');
 
 // Service manage garna ko lagi route haru
 Route::get('/admin/service/manage', [HomeController::class, 'getServiceManage'])->name('getServiceManage');
+Route::post('/admin/service/add', [HomeController::class, 'postAddService'])->name('postAddService');
 
 // Class manage garna ko lagi route haru
 Route::get('/admin/class/manage', [HomeController::class, 'getClassManage'])->name('getClassManage');
+Route::post('/admin/class/add', [HomeController::class, 'postAddClass'])->name('postAddClass');
 
 // Contact manage garna ko lagi route haru
 Route::get('/admin/contact/manage', [HomeController::class, 'getContactManage'])->name('getContactManage');
