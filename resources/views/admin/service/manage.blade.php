@@ -25,7 +25,6 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
                         <div class="table-responsive">
                             <table class="table table-hover">
                                 <thead>
@@ -39,36 +38,21 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($services as $service)
                                     <tr>
-                                        <td>2</td>
-                                        <td><i class="fas fa-laptop-code icon"></i></td>
-                                        <td>Webpage Development</td>
+                                        <td>{{ $service->id }}</td>
+                                        <td>{!! $service->service_icon !!}</td>
+                                        <td>{{ $service->service_title }}</td>
                                         <td>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quia rem magnam
-                                            atque cum dolorum in nostrum earum aliquam vero reprehenderit maiores similique
-                                            magni sit adipisci id quo, ex quis!
+                                            {{ $service->service_description }}
                                         </td>
-                                        <td>2070-02-12</td>
+                                        <td>{{ $service->created_at }}</td>
                                         <td>
                                             <a href="" class="btn btn-success btn-sm">Edit</a>
                                             <a href="" class="btn btn-danger btn-sm">Delete</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td><i class="fas fa-laptop-code icon"></i></td>
-                                        <td>Webpage Development</td>
-                                        <td>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quia rem magnam
-                                            atque cum dolorum in nostrum earum aliquam vero reprehenderit maiores similique
-                                            magni sit adipisci id quo, ex quis!
-                                        </td>
-                                        <td>2070-02-12</td>
-                                        <td>
-                                            <a href="" class="btn btn-success btn-sm">Edit</a>
-                                            <a href="" class="btn btn-danger btn-sm">Delete</a>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

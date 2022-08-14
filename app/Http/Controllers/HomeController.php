@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -35,10 +36,24 @@ class HomeController extends Controller
 
     // service manage garni function haru
     public function getServiceManage(){
-        return view('admin.service.manage');
+        $data = [
+            'services' => Service::all(),
+        ];
+        return view('admin.service.manage', $data);
     }
     public function postAddService(Request $request){
-        dd($request->all());    
+        $service_icon = $request->input('service_icon');  
+        $service_title = $request->input('service_title');  
+        $service_description = $request->input('service_description');  
+        // dd($service_icon, $service_title, $service_description);  
+
+        $service = new Service;
+        $service->service_icon = $service_icon;
+        $service->service_title = $service_title;
+        $service->service_description = $service_description;
+
+        $service->save();
+        return redirect()->back()->with('status', 'Service Added Successfully!');
     }
 
     // class manage garni function haru
