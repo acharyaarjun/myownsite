@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -28,10 +29,33 @@ class HomeController extends Controller
     }
     // about manage garni function haru
     public function getAboutManage(){
-        return view('admin.about.manage');
+        $data = [
+            'abouts' => About::all(),
+        ];
+        return view('admin.about.manage', $data);
     }
     public function postAddAbout(Request $request){
-        dd($request->all());
+        // dd($request->all());
+        $about_description = $request->input('about_description');
+        // dd($about_description);
+        $about_image = $request->file('about_image');
+        
+
+        // image ko name ko lagi
+        $imagename = md5(time());
+        // image ko extension ko lagi
+        $extension = $about_image->getClientOriginalExtension();
+        // image ko name rw extension milayera image name banaunako lagi
+        $realimagename = $imagename.'.'.$extension;
+        // image lai local ma save garna (site/uploads/about/) with name varkahr banayeko name
+        $about_image->move('site/uploads/about/', $realimagename);
+
+        $about = new About;
+        $about->about_image = $realimagename;
+        $about->about_description = $about_description;
+
+        $about->save();
+        return redirect()->back()->with('status', 'About added successfully!');
     }
 
     // service manage garni function haru

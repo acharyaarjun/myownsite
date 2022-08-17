@@ -39,22 +39,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <img src="{{ asset('site/image/bg.jpg') }}" alt="" style="width: 100%;">
-                                        </td>
-                                        <td>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quia rem magnam
-                                            atque cum dolorum in nostrum earum aliquam vero reprehenderit maiores similique
-                                            magni sit adipisci id quo, ex quis!
-                                        </td>
-                                        <td>2070-02-12</td>
-                                        <td>
-                                            <a href="" class="btn btn-success btn-sm">Edit</a>
-                                            <a href="" class="btn btn-danger btn-sm">Delete</a>
-                                        </td>
-                                    </tr>
+                                    @foreach ($abouts as $about)
+                                        <tr>
+                                            <td>{{ $about->id }}</td>
+                                            <td>
+                                                <img src="{{ asset('site/uploads/about/'.$about->about_image) }}" alt=""
+                                                    style="width: 100%;">
+                                            </td>
+                                            <td>
+                                                {{ $about->about_description }}
+                                            </td>
+                                            <td>{{ $about->created_at->format('M d, Y') }}</td>
+                                            <td>
+                                                <a href="" class="btn btn-success btn-sm">Edit</a>
+                                                <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
